@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>mcLanMy</title>
 </head>
-
 <body>
     <h2 id="mclanmygithubio">mclanmy.github.io</h2>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
 </head>
 <body>
-    <h1 style="font-family:verdana;color:light_blue;">Minecraft LanMy Server</h1>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+{
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(showPosition);
+	}
+	else
+	{
+		x.innerHTML="该浏览器不支持获取地理位置。";
+	}
+}
+
+function showPosition(position)
+{
+	x.innerHTML="纬度: " + position.coords.latitude + 
+	"<br>经度: " + position.coords.longitude;	
+}
+</script>
+	 <h1 style="font-family:verdana;color:light_blue;">Minecraft LanMy Server</h1>
     <hr>
     <h2><a href="https://mclanmy.github.io/PAGE1">谨慎点鸡，手鸡/电脑加热器</a></h2>
     <hr>
@@ -26,5 +48,5 @@
     <br>
     <br>
     <h4>      没有备案，警察蜀黍不要来抓我，我是好人</h4>
-<body>
+</body>
 </html>
