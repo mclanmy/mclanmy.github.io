@@ -8,41 +8,8 @@
 
 <body>
     <h2 id="mclanmygithubio">mclanmy.github.io</h2>
-<button onclick="getLocation()">点击获取当前经纬坐标</button>
-<script>
-var x=document.getElementById("demo");
-function getLocation()
-{
-	if (navigator.geolocation)
-	{
-		navigator.geolocation.getCurrentPosition(showPosition);
-	}
-	else
-	{
-		x.innerHTML="该浏览器不支持获取地理位置";
-	}
-}
-
-function showPosition(position)
-{
-	x.innerHTML="纬度: " + position.coords.latitude + 
-	"<br>经度: " + position.coords.longitude;	
-}
-    <style>
-        body {
-            background-color: #d0e4fe;
-        }
-        
-        h1 {
-            color: rgb(28, 189, 243);
-            text-align: center;
-        }
-        
-        p {
-            font-family: "Times New Roman";
-            font-size: 20px;
-        }
-    </style>
+</head>
+<body>
     <h1 style="font-family:verdana;color:light_blue;">Minecraft LanMy Server</h1>
     <hr>
     <h2><a href="https://mclanmy.github.io/PAGE1">谨慎点鸡，手鸡/电脑加热器</a></h2>
@@ -59,6 +26,5 @@ function showPosition(position)
     <br>
     <br>
     <h4>      没有备案，警察蜀黍不要来抓我，我是好人</h4>
-</body>
-
+<body>
 </html>
